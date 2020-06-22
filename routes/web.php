@@ -16,3 +16,9 @@
 //});
 
 Route::get('/','Index\IndexController@index');
+Route::get('/add','Index\IndexController@add');
+Route::any('/do_add','Index\IndexController@do_add');
+Route::any('/show','Index\IndexController@show');
+Route::any('/do_del','Index\IndexController@do_del');
+Route::any('/up/{id}','Index\IndexController@up');
+Route::any('/do_up','Index\IndexController@do_up');
